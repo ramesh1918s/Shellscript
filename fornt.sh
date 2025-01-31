@@ -56,5 +56,8 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>>$LOG_FILE
 VALIDATE $? "Extract the fornt code"
 
+cp /home/ec2-user/Shellscript/expense.conf /etc/nginx/default.d/expense.conf
+VALIDATE $? "Coppied expense conf"
+
 systemctl restart nginx &>>$LOG_FILE
 VALIDATE $? "Restart the Nginx"
