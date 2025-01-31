@@ -64,3 +64,24 @@ cd /app
 rm -rf /app/* # remove the existing code
 unzip /tmp/backend.zip &>>$LOG_FILE
 VALIDATE $? "Extracting backend application code"
+
+npm install &>>$LOG_FILE
+
+cp /home/ec2-user/Shellscript/backend.service /etc/systemd/system/backend.service
+
+#load the data before the running backend
+
+dnf install mysql -y &>>$LOG_FILE
+VALIDATE $? "Installing Mysql Client"
+
+mysql -h mysql.urukundu.live -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>$LOG_FILE
+VALIDATE $? "Schema loading success"
+
+systemctl daemon-reload &>>$LOG_FILE
+VALIDATE $? "daemon reloaded"
+
+systemctl enable backend &>>$LOG_FILE
+VALIDATE $? "Enable backend"
+
+systemctl restart backend &>>$LOG_FILE
+VALIDATE $? "Restarted backend"
