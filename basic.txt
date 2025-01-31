@@ -1,0 +1,237 @@
+ cd Shellscript
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ ls
+ Shellscript   conditionalstatement.sh   git.sh   loop.sh   mysql.sh   packegesinstall.sh   redirectors.sh  'shell .sh'   variables.sh
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ git remote -v
+origin  git@github.com:ramesh1918s/Shellscript.git (fetch)
+origin  git@github.com:ramesh1918s/Shellscript.git (push)
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ git pull
+Warning: Permanently added 'github.com' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ ^C
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ ls -al ~/.ssh/
+total 4
+drwx------. 2 ec2-user ec2-user  29 Aug 31 15:23 .
+drwx------. 5 ec2-user ec2-user 164 Jan 31 07:22 ..
+-rw-r--r--. 1 root     root     388 Aug 31 15:23 authorized_keys
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ cd authorized_keys
+-bash: cd: authorized_keys: No such file or directory
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ ls -al
+total 48
+drwxr-xr-x  4 ec2-user ec2-user 4096 Jan 31 05:40  .
+drwx------. 5 ec2-user ec2-user  164 Jan 31 07:24  ..
+drwxr-xr-x  8 ec2-user ec2-user 4096 Jan 31 07:21  .git
+drwxr-xr-x  2 ec2-user ec2-user    6 Jan 31 05:40  Shellscript
+-rw-r--r--  1 ec2-user ec2-user 2506 Jan 31 05:40  conditionalstatement.sh
+-rw-r--r--  1 ec2-user ec2-user 5357 Jan 31 05:40  git.sh
+-rw-r--r--  1 ec2-user ec2-user 1049 Jan 31 05:40  loop.sh
+-rw-r--r--  1 ec2-user ec2-user 1044 Jan 31 05:40  mysql.sh
+-rw-r--r--  1 ec2-user ec2-user  820 Jan 31 05:40  packegesinstall.sh
+-rw-r--r--  1 ec2-user ec2-user 4703 Jan 31 05:40  redirectors.sh
+-rw-r--r--  1 ec2-user ec2-user 1068 Jan 31 05:40 'shell .sh'
+-rw-r--r--  1 ec2-user ec2-user 2400 Jan 31 05:40  variables.sh
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ ^C
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ cd ~
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ssh-keygen -t rsa -b 4096 -C shivaram915454@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ec2-user/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/ec2-user/.ssh/id_rsa
+Your public key has been saved in /home/ec2-user/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:+VEi9dIyNYWzcuky9AGWYXIOnfJCRVU8x0wTWkiB/ds shivaram915454@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|        o+B=BB=Bo|
+|        oB*=o+= =|
+|       ..+*.+=.o |
+|        .o+*=  . |
+|        So.= .  o|
+|         .o.o  .E|
+|          .o     |
+|                 |
+|                 |
++----[SHA256]-----+
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ls -al ~/.ssh/
+total 12
+drwx------. 2 ec2-user ec2-user   61 Jan 31 07:26 .
+drwx------. 5 ec2-user ec2-user  164 Jan 31 07:26 ..
+-rw-r--r--. 1 root     root      388 Aug 31 15:23 authorized_keys
+-rw-------  1 ec2-user ec2-user 3389 Jan 31 07:26 id_rsa
+-rw-r--r--  1 ec2-user ec2-user  750 Jan 31 07:26 id_rsa.pub
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+Agent pid 17428
+Identity added: /home/ec2-user/.ssh/id_rsa (shivaram915454@gmail.com)
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ^C
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCotrHTtuNjdHNQsLewda7EDc884qCwNSDnrxqSVqyNDVmpD/FyOb5IMUMp0IzzKcfL/q5IlaLpFLXoJVvIj4I2G3E4qCu+jaMT5C6h/P9lPFk/Lnh4vmYwoHXYLciQdzdhd2FayYYS0Q2jzqktFk++GheERUUJVhR+T35Xvc53LQLAYrZ67RcS8RY/NEEX4A/5gIqIWuetnrNKw1aFkn8q0TouPF2rIHk6xcLSsGg7j5U01FqmxhxrEovND/S/EJsbGI6mJwuMn/xZN6Xih/USb8iqyNbBw+9zfWUcN8UjoaI6HaIUV/UYIftCZJ0eggWupLlQqkktWbsg+cAzzv4/i1UUq/enWePpPA7f6VYMG3NI35BlQZvwFfeXqTyFMKLqZurhn0Opc7Xo78QZhTn0+XrlCz/TkZvpX5qc+ge7PH9opoKF5+LvKmi1Oe0KGXWOmwgar0W8lP5xatp8CvQIyWJivJQuHCS5hUwqz3uNbpGVNfGX0AXpWowESGpuhNh1WH0v8PqfUK0Ob6SIGk8DQHyx99I1gxw5JJ0dexiRTjLIMIdwtNAKMzByBJphQVmftf4jBu88mwnLsmpkl/jm6ZO10fY2Cue/lLzxTC4jLUXPXW7++pX7x57JIS0dQSCaPT+4MYpRw3ZJ4VITg/CExkuMi2m7wK4HSnHtXVegGw== shivaram915454@gmail.com
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ^C
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ssh -T git@github.com
+Warning: Permanently added 'github.com' (ECDSA) to the list of known hosts.
+Hi ramesh1918s! You've successfully authenticated, but GitHub does not provide shell access.
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ^C
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ git branch --set-upstream-to=origin/main
+fatal: no commit on branch 'master' yet
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ git remote -v
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ls
+Shellscript
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ^C
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ cd Shellscrip
+-bash: cd: Shellscrip: No such file or directory
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ ls
+Shellscript
+
+54.172.34.87 | 192.40.2.85 | t3.micro | null
+[ ec2-user@ip-192-40-2-85 ~ ]$ cd Shellscript
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ ls
+ Shellscript   conditionalstatement.sh   git.sh   loop.sh   mysql.sh   packegesinstall.sh   redirectors.sh  'shell .sh'   variables.sh
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+[ ec2-user@ip-192-40-2-85 ~/Shellscript ]$ git pull
+Warning: Permanently added 'github.com' (ECDSA) to the list of known hosts.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 467 bytes | 467.00 KiB/s, done.
+From github.com:ramesh1918s/Shellscript
+   ec5a2d6..a78398e  main       -> origin/main
+Updating ec5a2d6..a78398e
+Fast-forward
+ mysql.sh | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+54.172.34.87 | 192.40.2.85 | t3.micro | git@github.com:ramesh1918s/Shellscript.git
+
+
+--------------------------------------------chatgpt------------------------------------------
+
+The error message indicates that the EC2 instance does not have the necessary SSH key configured to authenticate with GitHub for accessing the repository. Here are steps to troubleshoot and resolve the issue:
+
+### 1. **Verify SSH Key on EC2 Instance**
+Check if an SSH key exists on the instance:
+```bash
+ls -al ~/.ssh/
+```
+Look for files like `id_rsa` and `id_rsa.pub`.
+
+### 2. **Generate an SSH Key (If Not Present)**
+If there is no existing SSH key, generate one:
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+Press Enter to use the default file location and avoid a passphrase for automation.
+
+### 3. **Add the SSH Key to the SSH Agent**
+Start the SSH agent and add the key:
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+
+### 4. **Add the SSH Key to GitHub**
+Copy the public key to the clipboard:
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+- Go to [GitHub SSH Settings](https://github.com/settings/keys)
+- Click **New SSH Key**, paste the key, and give it a title.
+- Save the changes.
+
+### 5. **Test the SSH Connection**
+Verify the connection to GitHub:
+```bash
+ssh -T git@github.com
+```
+If successful, you'll see a message like:
+> Hi username! You've successfully authenticated.
+
+### 6. **Pull the Repository Again**
+```bash
+git pull
+```
+
+### Optional: **Check Git Remote URL**
+Ensure the remote URL is correct:
+```bash
+git remote -v
+```
+If it's an HTTPS URL, switch to SSH:
+```bash
+git remote set-url origin git@github.com:ramesh1918s/Shellscript.git
+```
+
+Let me know if you run into any specific issue along the way.
