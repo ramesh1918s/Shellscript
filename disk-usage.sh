@@ -49,3 +49,15 @@ do
 
     fi
 done <<< $DISK_USAGE
+
+
+
+# ----------------------(output)---------------------------------------------
+
+
+# sh  disk-usage.sh
+# / is more then 5, current value: 30.Please check
+# /home is more then 5, current value: 5.Please check
+# /var is more then 5, current value: 19.Please check
+# /var/log is more then 5, current value: 7.Please check
+# /boot is more then 5, current value: 53.Please check
