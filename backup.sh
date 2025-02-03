@@ -33,10 +33,44 @@ fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14 )
 
-if [ -n $FILES ]
+echo "Files: $FILES"
+
+if [ -z $FILES ] #true if FILES is empty
 then
    echo "Files are found"
 
 else
    echo "No Files older than $DAYS"
 fi
+
+
+------------------------------------------------------------------
+
+backup
+---------------
+logs-source-dir --> destination-directory(zip them)
+
+dynamically user gives source directory, destination directory, number of days
+
+number of days --> optional, if they dont provide, default is 14 days
+
+get the source dir, destination dir, days from user
+
+if they are not providing, show them usage and exit
+
+if they provide, check those dir are exist,if not exist exit the script
+if exist, find the files more than 14 days, zip them and move to destination directory, delete in source directory
+
+/home/ec2-user/app-log
+
+/home/ec2-user/backup
+
+-  mkdir -p /home/ec2-user/app-log
+-  mkdir -p /home/ec2-user/backup
+
+-------------------------------------(output)----------------------------------
+
+sh backup.sh /home/ec2-user/app-log  /home/ec2-user/backup
+Files are found
+
+54.83.93.175 | 192.40.2.87 |

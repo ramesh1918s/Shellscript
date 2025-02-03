@@ -37,7 +37,7 @@ if they are not providing, show them usage and exit
 if they provide, check those dir are exist,if not exist exit the script
 if exist, find the files more than 14 days, zip them and move to destination directory, delete in source directory
 
-/home/ec2-user/app-logs
+/home/ec2-user/app-log
 
 /home/ec2-user/backup
 
