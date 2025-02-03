@@ -108,7 +108,8 @@ fi
 # ------------------------------------------------------------------
 # find . -name "*.log" -mtime +14 | zip <name-of-zip-file> -@
 
-------
+
+
 
 # ]$ sudo dnf install zip -y ; find . -name "*.log" -mtime +14 | zip sample.zip  -@
 # Last metadata expiration check: 0:00:44 ago on Mon Feb  3 12:06:40 2025.
