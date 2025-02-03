@@ -38,7 +38,7 @@
 
 DISK_USAGE=$(df -hT | grep xfs)
 DISK_THRESHILD=5 #REAL projects, it is usually  75
-while IFS= read -r file #IFS , internal feild seperatpor ,empty it will not ignore while space . -r is for not ignore special charaters like (/,@.%.#)
+while IFS= read -r line #IFS , internal feild seperatpor ,empty it will not ignore while space . -r is for not ignore special charaters like (/,@.%.#)
 do 
    echo $line
    #USAGE=$(echo $file)
