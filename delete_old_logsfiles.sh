@@ -27,7 +27,7 @@
 
 
 
-SOURCE_DIR=/c/Users/91915/Shellscript/shell_script/logs
+SOURCE_DIR=/home/ec2-user/Shellscript/logs
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
