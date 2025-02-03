@@ -14,7 +14,13 @@ You can schedule the scripts periodically. mid night scripts, weekend scripts,ho
 M H day month   day(week)
 */2 * * * *
 
-/home/ec2-user/git-practice/18-delete-old-logs.sh
+/home/ec2-user/Shellscript/delete_old_logsfiles.sh
+
+-cd  /var/log 
+- sudo tail -f cron
+
+
+
 
 backup
 ---------------
